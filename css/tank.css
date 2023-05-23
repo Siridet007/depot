@@ -1,0 +1,563 @@
+/* -----------tk1------------------ */
+.tk {
+    /*Liquid Section*/
+    position: relative;
+    width: 110px;
+    height: 100px;
+    padding-top: 50px;
+    margin: 0 auto;
+    background: #FF8C00;
+    border-radius: 100%/30px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    /*float: left;*/
+    margin: 10px;
+  }
+
+  .tk:after,
+  .lq {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+  }
+
+  .lq {
+    background: rgba(217, 213, 213, 0.99);
+    height: 0%;
+    top: 0px;
+    border-radius: 100%/30px;
+    border-bottom: 3px solid #000;
+  }
+
+  .tk:after {
+    height: 30%;
+    border: 1px solid #000;
+    border-radius: 100%/30px;
+    /*makes circle at top*/
+  }
+
+  /* ------------------------------- */
+
+  .tk1 {
+    /*Liquid Section*/
+    position: relative;
+    width: 110px;
+    height: 100px;
+    padding-top: 50px;
+    margin: 0 auto;
+    background: #FF8C00;
+    border-radius: 100%/30px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    /*float: left;*/
+    margin: 10px;
+  }
+
+  .tk1:after,
+  .lq1 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+  }
+
+  .lq1 {
+    background: rgba(217, 213, 213, 0.99);
+    height: 0%;
+    top: 0px;
+    border-radius: 100%/30px;
+    border-bottom: 3px solid #000;
+  }
+
+  .tk1:after {
+    height: 30%;
+    border: 1px solid #000;
+    border-radius: 100%/30px;
+    /*makes circle at top*/
+  }
+
+
+  .tk2 {
+    /*Liquid Section*/
+    position: relative;
+    width: 110px;
+    height: 100px;
+    padding-top: 50px;
+    margin: 0 auto;
+    background: #FF8C00;
+    border-radius: 100%/30px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    /*float: left;*/
+    margin: 10px;
+  }
+
+  .tk2:after,
+  .lq2 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+  }
+
+  .lq2 {
+    background: rgba(217, 213, 213, 0.99);
+    height: 0%;
+    top: 0px;
+    border-radius: 100%/30px;
+    border-bottom: 3px solid #000;
+  }
+
+  .tk2:after {
+    height: 30%;
+    border: 1px solid #000;
+    border-radius: 100%/30px;
+    /*makes circle at top*/
+  }
+
+  .tk3 {
+    /*Liquid Section*/
+    position: relative;
+    width: 110px;
+    height: 100px;
+    padding-top: 50px;
+    margin: 0 auto;
+    background: #FF8C00;
+    border-radius: 100%/30px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    /*float: left;*/
+    margin: 10px;
+  }
+
+  .tk3:after,
+  .lq3 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+  }
+
+  .lq3 {
+    background: rgba(217, 213, 213, 0.99);
+    height: 0%;
+    top: 0px;
+    border-radius: 100%/30px;
+    border-bottom: 3px solid #000;
+  }
+
+  .tk3:after {
+    height: 30%;
+    border: 1px solid #000;
+    border-radius: 100%/30px;
+    /*makes circle at top*/
+  }
+
+  .tk4 {
+    /*Liquid Section*/
+    position: relative;
+    width: 110px;
+    height: 100px;
+    padding-top: 50px;
+    margin: 0 auto;
+    background: #FF8C00;
+    border-radius: 100%/30px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    /*float: left;*/
+    margin: 10px;
+  }
+
+  .tk4:after,
+  .lq4 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+  }
+
+  .lq4 {
+    background: rgba(217, 213, 213, 0.99);
+    height: 0%;
+    top: 0px;
+    border-radius: 100%/30px;
+    border-bottom: 3px solid #000;
+  }
+
+  .tk4:after {
+    height: 30%;
+    border: 1px solid #000;
+    border-radius: 100%/30px;
+    /*makes circle at top*/
+  }
+
+  .tk5 {
+    /*Liquid Section*/
+    position: relative;
+    width: 110px;
+    height: 100px;
+    padding-top: 50px;
+    margin: 0 auto;
+    background: #FF8C00;
+    border-radius: 100%/30px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    /*float: left;*/
+    margin: 10px;
+  }
+
+  .tk5:after,
+  .lq5 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+  }
+
+  .lq5 {
+    background: rgba(217, 213, 213, 0.99);
+    height: 0%;
+    top: 0px;
+    border-radius: 100%/30px;
+    border-bottom: 3px solid #000;
+  }
+
+  .tk5:after {
+    height: 30%;
+    border: 1px solid #000;
+    border-radius: 100%/30px;
+    /*makes circle at top*/
+  }
+
+  .tk6 {
+    /*Liquid Section*/
+    position: relative;
+    width: 110px;
+    height: 100px;
+    padding-top: 50px;
+    margin: 0 auto;
+    background: #FF8C00;
+    border-radius: 100%/30px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    /*float: left;*/
+    margin: 10px;
+  }
+
+  .tk6:after,
+  .lq6 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+  }
+
+  .lq6 {
+    background: rgba(217, 213, 213, 0.99);
+    height: 0%;
+    top: 0px;
+    border-radius: 100%/30px;
+    border-bottom: 3px solid #000;
+  }
+
+  .tk6:after {
+    height: 30%;
+    border: 1px solid #000;
+    border-radius: 100%/30px;
+    /*makes circle at top*/
+  }
+
+  .tk7 {
+    /*Liquid Section*/
+    position: relative;
+    width: 110px;
+    height: 100px;
+    padding-top: 50px;
+    margin: 0 auto;
+    background: #FF8C00;
+    border-radius: 100%/30px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    /*float: left;*/
+    margin: 10px;
+  }
+
+  .tk7:after,
+  .lq7 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+  }
+
+  .lq7 {
+    background: rgba(217, 213, 213, 0.99);
+    height: 0%;
+    top: 0px;
+    border-radius: 100%/30px;
+    border-bottom: 3px solid #000;
+  }
+
+  .tk7:after {
+    height: 30%;
+    border: 1px solid #000;
+    border-radius: 100%/30px;
+    /*makes circle at top*/
+  }
+
+  .tk8 {
+    /*Liquid Section*/
+    position: relative;
+    width: 110px;
+    height: 100px;
+    padding-top: 50px;
+    margin: 0 auto;
+    background: #FF8C00;
+    border-radius: 100%/30px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    /*float: left;*/
+    margin: 10px;
+  }
+
+  .tk8:after,
+  .lq8 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+  }
+
+  .lq8 {
+    background: rgba(217, 213, 213, 0.99);
+    height: 0%;
+    top: 0px;
+    border-radius: 100%/30px;
+    border-bottom: 3px solid #000;
+  }
+
+  .tk8:after {
+    height: 30%;
+    border: 1px solid #000;
+    border-radius: 100%/30px;
+    /*makes circle at top*/
+  }
+
+  .tk9 {
+    /*Liquid Section*/
+    position: relative;
+    width: 110px;
+    height: 100px;
+    padding-top: 50px;
+    margin: 0 auto;
+    background: #FF8C00;
+    border-radius: 100%/30px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    /*float: left;*/
+    margin: 10px;
+  }
+
+  .tk9:after,
+  .lq9 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+  }
+
+  .lq9 {
+    background: rgba(217, 213, 213, 0.99);
+    height: 0%;
+    top: 0px;
+    border-radius: 100%/30px;
+    border-bottom: 3px solid #000;
+  }
+
+  .tk9:after {
+    height: 30%;
+    border: 1px solid #000;
+    border-radius: 100%/30px;
+    /*makes circle at top*/
+  }
+
+
+  .tk10 {
+    /*Liquid Section*/
+    position: relative;
+    width: 110px;
+    height: 100px;
+    padding-top: 50px;
+    margin: 0 auto;
+    background: #FF8C00;
+    border-radius: 100%/30px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    /*float: left;*/
+    margin: 10px;
+  }
+
+  .tk10:after,
+  .lq10 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+  }
+
+  .lq10 {
+    background: rgba(217, 213, 213, 0.99);
+    height: 0%;
+    top: 0px;
+    border-radius: 100%/30px;
+    border-bottom: 3px solid #000;
+  }
+
+  .tk10:after {
+    height: 30%;
+    border: 1px solid #000;
+    border-radius: 100%/30px;
+    /*makes circle at top*/
+  }
+
+  .tk11 {
+    /*Liquid Section*/
+    position: relative;
+    width: 110px;
+    height: 100px;
+    padding-top: 50px;
+    margin: 0 auto;
+    background: #FF8C00;
+    border-radius: 100%/30px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    /*float: left;*/
+    margin: 10px;
+  }
+
+  .tk11:after,
+  .lq11 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+  }
+
+  .lq11 {
+    background: rgba(217, 213, 213, 0.99);
+    height: 0%;
+    top: 0px;
+    border-radius: 100%/30px;
+    border-bottom: 3px solid #000;
+  }
+
+  .tk11:after {
+    height: 30%;
+    border: 1px solid #000;
+    border-radius: 100%/30px;
+    /*makes circle at top*/
+  }
+
+  .tk12 {
+    /*Liquid Section*/
+    position: relative;
+    width: 110px;
+    height: 100px;
+    padding-top: 50px;
+    margin: 0 auto;
+    background: #FF8C00;
+    border-radius: 100%/30px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    /*float: left;*/
+    margin: 10px;
+  }
+
+  .tk12:after,
+  .lq12 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+  }
+
+  .lq12 {
+    background: rgba(217, 213, 213, 0.99);
+    height: 0%;
+    top: 0px;
+    border-radius: 100%/30px;
+    border-bottom: 3px solid #000;
+  }
+
+  .tk12:after {
+    height: 30%;
+    border: 1px solid #000;
+    border-radius: 100%/30px;
+    /*makes circle at top*/
+  }
