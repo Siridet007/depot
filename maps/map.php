@@ -51,7 +51,7 @@ $name = $row['firstname'] . " " . $row['lastname'];
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/font-th.css">
-    <link rel="stylesheet" href="../css/nav2.css">
+    <link rel="stylesheet" href="../css/nav1.css">
     <link rel="icon" type="image/png" href="../images/Sub-logo.png">
 
 
@@ -87,10 +87,11 @@ $name = $row['firstname'] . " " . $row['lastname'];
             padding: 20px;
             position: fixed;
             left: 0;
-            top: 800px;
+            top: 830px;
             width: 100%;
             text-align: center;
         }
+
     </style>
 </head>
 
@@ -123,195 +124,191 @@ $name = $row['firstname'] . " " . $row['lastname'];
 
     <div class="container">
         <div class="d-flex justify-content-center mx-auto">
-            <img src="../images/map2.png" id="zzz"
-                style="width:1890px;height:754px;margin-top:-20px;box-shadow: 0 0 8px 8px white inset;border-radius:5px;">
+            <img src="../images/map3.png" id="zzz"
+                style="width:1890px;height:754px;margin-top:-10px;box-shadow: 0 0 8px 8px white inset;border-radius:5px;border: 5px solid #000;">
             <?php if ($disableButton == 1) { ?>
                 <div class="btn-group dropleft">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="true"
-                        style="position: absolute;top:330px;left:-380px;font-size:20px; padding: 2px;">
+                        style="position: absolute;top:350px;left:-230px;font-size:20px; padding: 2px;">
                         สรรพสามิตกรุงเทพฯพื้นที่1
                     </button>
                     <div class="dropdown-menu" style="background:#E0FFFF">
                         <a class="dropdown-item"
                             href="../tank/susco.php?name=susco&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                src="../images/Susco_Logo.png" style="width:20px;height:20px;">คลังน้ำมันราษฎร์บูรณะ</a>
+                                src="../images/Susco.png" style="width:20px;height:20px;">คลังน้ำมันราษฎร์บูรณะ</a>
                     </div>
                 </div>
                 <div class="btn-group dropleft">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false"
-                        style="position: absolute;top: 380px;left: -380px;font-size:20px;padding: 2px;">
+                        style="position: absolute;top: 400px;left: -230px;font-size:20px;padding: 2px;">
                         สรรพสามิตกรุงเทพฯพื้นที่3
                     </button>
                     <div class="dropdown-menu" style="background:#E0FFFF">
                         <a class="dropdown-item"
                             href="../tank/bck.php?name=bck&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                src="../images/PTT_Logo.png" style="width:20px;height:20px;">คลังน้ำมันปิโตรเลียมบางจาก</a>
+                                src="../images/PTT.png" style="width:20px;height:20px;">คลังน้ำมันปิโตรเลียมบางจาก</a>
                         <a class="dropdown-item"
                             href="../tank/pkn.php?name=pkn&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                src="../images/PTT_Logo.png" style="width:20px;height:20px;">คลังน้ำมันปตท.พระโขนง</a>
+                                src="../images/PTT.png" style="width:20px;height:20px;">คลังน้ำมันปตท.พระโขนง</a>
                     </div>
                 </div>
                 <div class="btn-group dropright">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false"
-                        style="position: absolute;top: 465px;left: -190px;font-size:20px;padding: 2px;">
+                        style="position: absolute;top: 480px;left: -190px;font-size:20px;padding: 2px;">
                         สรรพสามิตพื้นที่สมุทรสงคราม
                     </button>
                     <div class="dropdown-menu" style="background:#E0FFFF">
                         <a class="dropdown-item"
                             href="../tank/ptg.php?name=ptg&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                src="../images/PTG_Logo.jpg" style="width:20px;height:20px;">คลังน้ำมันพีทีจีแม่กลอง</a>
+                                src="../images/PTG.png" style="width:20px;height:20px;">คลังน้ำมันพีทีจีแม่กลอง</a>
                         <a class="dropdown-item"
                             href="../tank/shell.php?name=mk&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                src="../images/Shell_Logo.png" style="width:20px;height:20px;">คลังน้ำมันเชลล์แม่กลอง</a>
+                                src="../images/Shell.png" style="width:20px;height:20px;">คลังน้ำมันเชลล์แม่กลอง</a>
                     </div>
                 </div>
             <?php } else if ($disableButton == 2) { ?>
                     <div class="btn-group dropright">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="true"
-                            style="position: absolute;top:330px;left:-380px;font-size:20px;padding: 2px;">
+                            style="position: absolute;top:350px;left:-230px;font-size:20px;padding: 2px;">
                             สรรพสามิตกรุงเทพฯพื้นที่1
                         </button>
                         <div class="dropdown-menu" style="background:#E0FFFF">
                             <a class="dropdown-item"
                                 href="../tank/susco.php?name=susco&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                    src="../images/Susco_Logo.png" style="width:20px;height:20px;">คลังน้ำมันราษฎร์บูรณะ</a>
+                                    src="../images/Susco.png" style="width:20px;height:20px;">คลังน้ำมันราษฎร์บูรณะ</a>
                         </div>
                     </div>
                     <div class="btn-group dropright" style="background:#E0FFFF">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false"
-                            style="position: absolute;top: 380px;eft: -380px;font-size:20px;padding: 2px;" disabled>
+                            style="position: absolute;top: 400px;left: -230px;font-size:20px;padding: 2px;" disabled>
                             สรรพสามิตกรุงเทพฯพื้นที่3
                         </button>
                         <div class="dropdown-menu" style="background:#E0FFFF">
                             <a class="dropdown-item"
                                 href="../tank/bck.php?name=bck&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>']"><img
-                                    src="../images/PTT_Logo.png" style="width:20px;height:20px;">คลังน้ำมันปิโตรเลียมบางจาก</a>
+                                    src="../images/PTT.png" style="width:20px;height:20px;">คลังน้ำมันปิโตรเลียมบางจาก</a>
                             <a class="dropdown-item"
                                 href="../tank/pkn.php?name=pkn&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                    src="../images/PTT_Logo.png" style="width:20px;height:20px;">คลังน้ำมันปตท.พระโขนง</a>
+                                    src="../images/PTT.png" style="width:20px;height:20px;">คลังน้ำมันปตท.พระโขนง</a>
                         </div>
                     </div>
                     <div class="btn-group dropright" style="background:#E0FFFF">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false"
-                            style="position: absolute;top: 465px;left: -190px;font-size:20px;padding: 2px;" disabled>
+                            style="position: absolute;top: 480px;left: -190px;font-size:20px;padding: 2px;" disabled>
                             สรรพสามิตพื้นที่สมุทรสงคราม
                         </button>
                         <div class="dropdown-menu">
                             <a class="dropdown-item"
                                 href="../tank/ptg.php?name=ptg&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                    src="../images/PTG_Logo.jpg" style="width:20px;height:20px;">คลังน้ำมันพีทีจีแม่กลอง</a>
+                                    src="../images/PTG.jpg" style="width:20px;height:20px;">คลังน้ำมันพีทีจีแม่กลอง</a>
                             <a class="dropdown-item"
                                 href="../tank/shell.php?name=mk&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                    src="../images/Shell_Logo.png" style="width:20px;height:20px;">คลังน้ำมันเชลล์แม่กลอง</a>
+                                    src="../images/Shell.png" style="width:20px;height:20px;">คลังน้ำมันเชลล์แม่กลอง</a>
                         </div>
                     </div>
             <?php } else if ($disableButton == 3) { ?>
                         <div class="btn-group dropright">
                             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="true"
-                                style="position: absolute;top:330px;left:-380px;font-size:20px;padding: 2px;" disabled>
+                                style="position: absolute;top:350px;left:-230px;font-size:20px;padding: 2px;" disabled>
                                 สรรพสามิตกรุงเทพฯพื้นที่1
                             </button>
                             <div class="dropdown-menu" style="background:#E0FFFF">
                                 <a class="dropdown-item"
                                     href="../tank/susco.php?name=susco&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                        src="../images/Susco_Logo.png" style="width:20px;height:20px;">คลังน้ำมันราษฎร์บูรณะ</a>
+                                        src="../images/Susco.png" style="width:20px;height:20px;">คลังน้ำมันราษฎร์บูรณะ</a>
                             </div>
                         </div>
                         <div class="btn-group dropright">
                             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false"
-                                style="position: absolute;top: 380px;left: -380px;font-size:20px;padding: 2px;">
+                                style="position: absolute;top: 400px;left:-230px;font-size:20px;padding: 2px;">
                                 สรรพสามิตกรุงเทพฯพื้นที่3
                             </button>
                             <div class="dropdown-menu" style="background:#E0FFFF">
                                 <a class="dropdown-item"
                                     href="../tank/bck.php?name=bck&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                        src="../images/PTT_Logo.png" style="width:20px;height:20px;">คลังน้ำมันปิโตรเลียมบางจาก</a>
+                                        src="../images/PTT.png" style="width:20px;height:20px;">คลังน้ำมันปิโตรเลียมบางจาก</a>
                                 <a class="dropdown-item"
                                     href="../tank/pkn.php?name=pkn&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                        src="../images/PTT_Logo.png" style="width:20px;height:20px;">คลังน้ำมันปตท.พระโขนง</a>
+                                        src="../images/PTT.png" style="width:20px;height:20px;">คลังน้ำมันปตท.พระโขนง</a>
                             </div>
                         </div>
                         <div class="btn-group dropright">
                             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false"
-                                style="position: absolute;top: 465px;left: -190px;font-size:20px;padding: 2px;" disabled>
+                                style="position: absolute;top: 480px;left: -190px;font-size:20px;padding: 2px;" disabled>
                                 สรรพสามิตพื้นที่สมุทรสงคราม
                             </button>
                             <div class="dropdown-menu" style="background:#E0FFFF">
                                 <a class="dropdown-item"
                                     href="../tank/ptg.php?name=ptg&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                        src="../images/PTG_Logo.jpg" style="width:20px;height:20px;">คลังน้ำมันพีทีจีแม่กลอง</a>
+                                        src="../images/PTG.jpg" style="width:20px;height:20px;">คลังน้ำมันพีทีจีแม่กลอง</a>
                                 <a class="dropdown-item"
                                     href="../tank/shell.php?name=mk&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                        src="../images/Shell_Logo.png" style="width:20px;height:20px;">คลังน้ำมันเชลล์แม่กลอง</a>
+                                        src="../images/Shell.png" style="width:20px;height:20px;">คลังน้ำมันเชลล์แม่กลอง</a>
                             </div>
                         </div>
             <?php } else if ($disableButton == 4) { ?>
                             <div class="btn-group dropright">
                                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="true"
-                                    style="position: absolute;top:330px;left:-380px;font-size:20px;padding: 2px;" disabled>
+                                    style="position: absolute;top:350px;left:-230px;font-size:20px;padding: 2px;" disabled>
                                     สรรพสามิตกรุงเทพฯพื้นที่1
                                 </button>
                                 <div class="dropdown-menu" style="background:#E0FFFF">
                                     <a class="dropdown-item"
                                         href="../tank/susco.php?name=susco&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                            src="../images/Susco_Logo.png" style="width:20px;height:20px;">คลังน้ำมันราษฎร์บูรณะ</a>
+                                            src="../images/Susco.png" style="width:20px;height:20px;">คลังน้ำมันราษฎร์บูรณะ</a>
                                 </div>
                             </div>
                             <div class="btn-group dropright">
                                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false"
-                                    style="position: absolute;top: 380px;left: -380px;font-size:20px;padding: 2px;" disabled>
+                                    style="position: absolute;top: 400px;left:-230px;font-size:20px;padding: 2px;" disabled>
                                     สรรพสามิตกรุงเทพฯพื้นที่3
                                 </button>
                                 <div class="dropdown-menu" style="background:#E0FFFF">
                                     <a class="dropdown-item"
                                         href="../tank/bck.php?name=bck&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                            src="../images/PTT_Logo.png" style="width:20px;height:20px;">คลังน้ำมันปิโตรเลียมบางจาก</a>
+                                            src="../images/PTT.png" style="width:20px;height:20px;">คลังน้ำมันปิโตรเลียมบางจาก</a>
                                     <a class="dropdown-item"
                                         href="../tank/pkn.php?name=pkn&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                            src="../images/PTT_Logo.png" style="width:20px;height:20px;">คลังน้ำมันปตท.พระโขนง</a>
+                                            src="../images/PTT.png" style="width:20px;height:20px;">คลังน้ำมันปตท.พระโขนง</a>
                                 </div>
                             </div>
                             <div class="btn-group dropright" style="background:#E0FFFF">
                                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false"
-                                    style="position: absolute;top: 465px;left: -190px;font-size:20px;padding: 2px;">
+                                    style="position: absolute;top: 480px;left: -190px;font-size:20px;padding: 2px;">
                                     สรรพสามิตพื้นที่สมุทรสงคราม
                                 </button>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item"
                                         href="../tank/ptg.php?name=ptg&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                            src="../images/PTG_Logo.jpg" style="width:20px;height:20px;">คลังน้ำมันพีทีจีแม่กลอง</a>
+                                            src="../images/PTG.jpg" style="width:20px;height:20px;">คลังน้ำมันพีทีจีแม่กลอง</a>
                                     <a class="dropdown-item"
                                         href="../tank/shell.php?name=mk&id=<?php echo $row['id'] ?>&user=<?php echo $name ?>"><img
-                                            src="../images/Shell_Logo.png" style="width:20px;height:20px;">คลังน้ำมันเชลล์แม่กลอง</a>
+                                            src="../images/Shell.png" style="width:20px;height:20px;">คลังน้ำมันเชลล์แม่กลอง</a>
                                 </div>
                             </div>
             <?php } ?>
 
         </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-5"
         style="background-color: #FF8C00;">
         <div class="col-md-6 d-flex align-items-center">
-            <a href="/" class="me-2 md-md-0 text-muterd text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24">
-                    <img src="../images/Sub-logo.png" style="width:150px;">
-                </svg>
-            </a>
+        <img src="../images/unity1.png" style="width:120px;">
             <span class="mb-md-0 text-muterd">
-                <h1 style="margin-left:20px">@ Unity Focus Co.,Ltd | Siridet Wongnarat Designer</h1>
+                <h1 style="margin-left:20px;font-size:18px">© 2023 Siridet Wongnarat | Unity Focus All right reserved</h1>
             </span>
         </div>
         <!--

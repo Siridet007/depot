@@ -12,7 +12,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/tank.css">
-    <link rel="stylesheet" href="../css/nav2.css">
+    <link rel="stylesheet" href="../css/nav1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/font-th.css">
     <link rel="icon" type="image/png" href="../images/Sub-logo.png">
@@ -188,7 +188,7 @@
                     <table border="0">
                         <tr>
                             <td>
-                                <img src="../images/PTG_Logo.jpg" class="image"
+                                <img src="../images/PTG.png" class="image"
                                     style="height:80px;width:80px;margin-right:20px;">
                             </td>
                             <td>

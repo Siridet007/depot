@@ -10,6 +10,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/font-th.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" type="image/png" href="images/Sub-logo.png">
     <title>คลังน้ำมัน</title>
 </head>
 <style>

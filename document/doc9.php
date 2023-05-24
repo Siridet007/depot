@@ -48,7 +48,7 @@ if (($_GET['name']) == 'susco') {
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="../css/tank.css">
-    <link rel="stylesheet" href="../css/nav2.css">
+    <link rel="stylesheet" href="../css/nav1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/font-th.css">
     <link rel="stylesheet" href="../css/card.css">
@@ -131,7 +131,7 @@ if (($_GET['name']) == 'susco') {
                 <table border="0">
                     <tr>
                         <td>
-                            <img src="../images/Susco_Logo.png" class="image"
+                            <img src="../images/Susco.png" class="image"
                                 style="height:80px;width:80px;margin-right:20px;">
                         </td>
                         <td>
@@ -146,7 +146,7 @@ if (($_GET['name']) == 'susco') {
                 <table border="0">
                     <tr>
                         <td>
-                            <img src="../images/PTT_Logo.png" class="image"
+                            <img src="../images/PTT.png" class="image"
                                 style="height:80px;width:80pxmargin-right:20px;">
                         </td>
                         <td>
@@ -161,7 +161,7 @@ if (($_GET['name']) == 'susco') {
                 <table border="0">
                     <tr>
                         <td>
-                            <img src="../images/PTT_Logo.png" class="image"
+                            <img src="../images/PTT.png" class="image"
                                 style="height:80px;width:80px;margin-right:20px;">
                         </td>
                         <td>
@@ -176,7 +176,7 @@ if (($_GET['name']) == 'susco') {
                 <table border="0">
                     <tr>
                         <td>
-                            <img src="../images/PTG_Logo.jpg" class="image"
+                            <img src="../images/PTG.png" class="image"
                                 style="height:80px;width:80px;margin-right:20px;">
                         </td>
                         <td>
@@ -191,7 +191,7 @@ if (($_GET['name']) == 'susco') {
                 <table border="0">
                     <tr>
                         <td>
-                            <img src="../images/Shell_Logo.png" class="image"
+                            <img src="../images/Shell.png" class="image"
                                 style="height:80px;width:80px;margin-right:20px;">
                         </td>
                         <td>

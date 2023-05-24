@@ -34,7 +34,7 @@ unset($_SESSION['user']);
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/tank.css">
-    <link rel="stylesheet" href="../css/nav2.css">
+    <link rel="stylesheet" href="../css/nav1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/font-th.css">
     <link rel="stylesheet" href="../css/card.css">
@@ -112,23 +112,23 @@ unset($_SESSION['user']);
                     <tr>
                     <td width="5%">
                         <?php if ($name == 'susco') { ?>
-                            <img src="../images/Susco_Logo.png" class="image"
+                            <img src="../images/Susco.png" class="image"
                                 style="height:60px;width:60px;margin-right:20px;">
                         <?php } ?>
                         <?php if ($name == 'bck') { ?>
-                            <img src="../images/PTT_Logo.png" class="image"
+                            <img src="../images/PTT.png" class="image"
                                 style="height:80px;width:80px;margin-right:20px;">
                         <?php } ?>
                         <?php if ($name == 'pkn') { ?>
-                            <img src="../images/PTT_Logo.png" class="image"
+                            <img src="../images/PTT.png" class="image"
                                 style="height:80px;width:80px;margin-right:20px;">
                         <?php } ?>
                         <?php if ($name == 'ptg') { ?>
-                            <img src="../images/PTG_Logo.jpg" class="image"
+                            <img src="../images/PTG.png" class="image"
                                 style="height:80px;width:80px;margin-right:20px;">
                         <?php } ?>
                         <?php if ($name == 'mk') { ?>
-                            <img src="../images/Shell_Logo.png" class="image"
+                            <img src="../images/Shell.png" class="image"
                                 style="height:80px;width:80px;margin-right:20px;">
                         <?php } ?>
                     </td>
