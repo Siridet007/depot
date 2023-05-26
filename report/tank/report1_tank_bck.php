@@ -1,34 +1,12 @@
 <?php
-    require_once '../../config/exd_db.php';
+    require_once '../../config/bck_db.php';
     $month = $_POST['month'];
     $year = $_POST['year'];
     $db = $_POST['id'];
-    if (($_POST['id']) == 'susco') {
-        $sqle = $conne->prepare("SELECT * FROM vBatch_Web WHERE D_ID = 4 AND START_MONTH = $month AND START_YEAR = $year");
-        $sqle->execute();
-        $resulte = $sqle->fetchAll();
-        //print_r($resulte);
-    } else if (($_POST['id']) == 'bck') {
-        $sqle = $conne->prepare("SELECT * FROM vBatch_Web WHERE D_ID = 5 AND START_MONTH = $month AND START_YEAR = $year");
-        $sqle->execute();
-        $resulte = $sqle->fetchAll();
-        //print_r($resulte);
-    } else if (($_POST['id']) == 'pkn') {
-        $sqle = $conne->prepare("SELECT * FROM vBatch_Web WHERE D_ID = 3 AND START_MONTH = $month AND START_YEAR = $year");
-        $sqle->execute();
-        $resulte = $sqle->fetchAll();
-        //print_r($resulte);
-    } else if (($_POST['id']) == 'ptg') {
-        $sqle = $conne->prepare("SELECT * FROM vBatch_Web WHERE D_ID = 2 AND START_MONTH = $month AND START_YEAR = $year");
-        $sqle->execute();
-        $resulte = $sqle->fetchAll();
-        //print_r($resulte);
-    } else if (($_POST['id']) == 'mk') {
-        $sqle = $conne->prepare("SELECT * FROM vBatch_Web WHERE D_ID = 1 AND START_MONTH = $month AND START_YEAR = $year");
-        $sqle->execute();
-        $resulte = $sqle->fetchAll();
-       // print_r($resulte);
-    }
+    
+    $sqle = $conn->prepare("SELECT * FROM vTank_MonthReport_V2 WHERE MONTH = $month AND YEAR = $year");
+    $sqle->execute();
+    $resulte = $sqle->fetchAll();
     
     if(($month) == '01'){
         $month = 'มกราคม';
@@ -153,25 +131,28 @@
                     <thead>
                         <tr align="center">
                             <td rowspan="2" width="5%"><b>เวลา</b></td>
-                            <td colspan="4" ><b>Tank05</b></td>
-                            <td colspan="4" ><b>Tank14</b></td>
-                            <td colspan="4" ><b>Tank15</b></td>
+                            <td colspan="5" ><b>Tank05</b></td>
+                            <td colspan="5" ><b>Tank14</b></td>
+                            <td colspan="5" ><b>Tank15</b></td>
                         </tr>
                         <tr align="center">
-                            <td ><b>ปริมาณน้ำมัน<br>(ลิตร)</b></td>
-                            <td ><b>ระดับน้ำมัน<br>(ลิตร)</b></td>
-                            <td ><b>อุณหภูมิ<br> ( ํF)</b></td>
-                            <td ><b>สถานะวาล์ว<br>(เปิด/ปิด)</b> </td>
+                            <td><font size="3"><b>ปริมาณน้ำมัน<br> Max (ลิตร)</b></td>
+                            <td><font size="3"><b>ปริมาณน้ำมัน<br> Min (ลิตร)</b></td>
+                            <td><font size="3"><b>ระดับน้ำมัน<br> Max (มม.)</b></td>
+                            <td><font size="3"><b>ระดับน้ำมัน<br> Min (มม.)</b></td>
+                            <td><font size="3"><b>อุณหภูมิ<br> ( ํF)</b></td>
                             
-                            <td ><b>ปริมาณน้ำมัน<br>(ลิตร)</b></td>
-                            <td ><b>ระดับน้ำมัน<br>(ลิตร)</b></td>
-                            <td ><b>อุณหภูมิ<br> ( ํF)</b></td>
-                            <td ><b>สถานะวาล์ว<br>(เปิด/ปิด)</b> </td>
+                            <td><font size="3"><b>ปริมาณน้ำมัน<br> Max (ลิตร)</b></td>
+                            <td><font size="3"><b>ปริมาณน้ำมัน<br> Min (ลิตร)</b></td>
+                            <td><font size="3"><b>ระดับน้ำมัน<br> Max (มม.)</b></td>
+                            <td><font size="3"><b>ระดับน้ำมัน<br> Min (มม.)</b></td>
+                            <td><font size="3"><b>อุณหภูมิ<br> ( ํF)</b></td>
                             
-                            <td ><b>ปริมาณน้ำมัน<br>(ลิตร)</b></td>
-                            <td ><b>ระดับน้ำมัน<br>(ลิตร)</b></td>
-                            <td ><b>อุณหภูมิ<br> ( ํF)</b></td>
-                            <td ><b>สถานะวาล์ว<br>(เปิด/ปิด)</b> </td>
+                            <td><font size="3"><b>ปริมาณน้ำมัน<br> Max (ลิตร)</b></td>
+                            <td><font size="3"><b>ปริมาณน้ำมัน<br> Min (ลิตร</b>)</td>
+                            <td><font size="3"><b>ระดับน้ำมัน<br> Max (มม.)</b></td>
+                            <td><font size="3"><b>ระดับน้ำมัน<br> Min (มม.)</b></td>
+                            <td><font size="3"><b>อุณหภูมิ<br> ( ํF)</b></td>
                         </tr>
                     </thead>
                     <tbody>
@@ -182,8 +163,8 @@
                         //array_merge($arr,$resulte); 
                         //$resulte = $arr;
 
-                        $resulte = array_slice($resulte,0,24);
-                        $aa = count($resulte) <=24 ? 24-count($resulte): 0;
+                        $resulte = array_slice($resulte,0,30);
+                        $aa = count($resulte) <=30 ? 30-count($resulte): 0;
                         $bb = count($resulte)+1;
                         foreach($resulte as $key => $z){ 
                            // print_r($z);
@@ -191,36 +172,45 @@
                            <?php // $percent = ((($z['TANK_RECIVE_VOL'] - $z['METER_VOLUME']) / $z['TANK_RECIVE_VOL']) * 100) ?>
                            
                         <tr align="center">                           
-                            <td><?php echo $z['Time'] ?> </td>
-                            <td><?php echo $z['TK05_Total'] ?> </td>
-                            <td><?php echo $z['TK05_Level'] ?> </td>
-                            <td><?php echo $z['TK05_Temp'] ?> </td>
-                            <td><?php echo $z['TK05_Valve_Sts'] ?> </td>
-                            <td><?php echo $z['TK14_Total'] ?> </td>
-                            <td><?php echo $z['TK14_Level'] ?> </td>
-                            <td><?php echo $z['TK14_Temp'] ?> </td>
-                            <td><?php echo $z['TK14_Valve_Sts'] ?> </td>
-                            <td><?php echo $z['TK15_Total'] ?> </td>
-                            <td><?php echo $z['TK15_Level'] ?> </td>
-                            <td><?php echo $z['TK15_Temp'] ?> </td>
-                            <td><?php echo $z['TK15_Valve_Sts'] ?> </td>
+                            <td><font size="2"><?php echo $z['DATE'] ?> </td>
+
+                            <td><font size="3"><?php echo $z['TK05_Total_Max'] ?> </td>
+                            <td><font size="3"><?php echo $z['TK05_Total_Min'] ?> </td>
+                            <td><font size="3"><?php echo $z['TK05_Level_Max'] ?> </td>
+                            <td><font size="3"><?php echo $z['TK05_Level_Min'] ?> </td>
+                            <td><font size="3"><?php echo $z['TK05_Temp'] ?> </td>
+
+                            <td><font size="3"><?php echo $z['TK14_Total_Max'] ?> </td>
+                            <td><font size="3"><?php echo $z['TK14_Total_Min'] ?> </td>
+                            <td><font size="3"><?php echo $z['TK14_Level_Max'] ?> </td>
+                            <td><font size="3"><?php echo $z['TK14_Level_Min'] ?> </td>
+                            <td><font size="3"><?php echo $z['TK14_Temp'] ?> </td>
+
+                            <td><font size="3"><?php echo $z['TK15_Total_Max'] ?> </td>
+                            <td><font size="3"><?php echo $z['TK15_Total_Min'] ?> </td>
+                            <td><font size="3"><?php echo $z['TK15_Level_Max'] ?> </td>
+                            <td><font size="3"><?php echo $z['TK15_Level_Min'] ?> </td>
+                            <td><font size="3"><?php echo $z['TK15_Temp'] ?> </td>
                         </tr>
                         <?php } ?>                   
                         <?php for($i=0;$i<$aa;$i++){ ?>
                         <tr align="center">                          
                             <td>&nbsp; </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
+                            <td><font size="3"> </td>
+                            <td><font size="3"> </td>
+                            <td><font size="3"> </td>
+                            <td><font size="3"> </td>
+                            <td><font size="3"> </td>
+                            <td><font size="3"> </td>
+                            <td><font size="3"> </td>
+                            <td><font size="3"> </td>
+                            <td><font size="3"> </td>
+                            <td><font size="3"> </td>
+                            <td><font size="3"> </td>
+                            <td><font size="3"> </td>
+                            <td><font size="3"> </td>
+                            <td><font size="3"> </td>
+                            <td><font size="3"> </td>
                         </tr>
                       <?php  } ?>
                         

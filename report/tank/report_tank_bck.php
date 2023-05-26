@@ -1,35 +1,13 @@
 <?php
-    require_once '../../config/exd_db.php';
+    require_once '../../config/bck_db.php';
     $day = $_POST['day'];
     $month = $_POST['month'];
     $year = $_POST['year'];
     $db = $_POST['id'];
-    if (($_POST['id']) == 'susco') {
-        $sqle = $conne->prepare("SELECT * FROM vBatch_Web WHERE D_ID = 4 AND START_DAY = $day AND START_MONTH = $month AND START_YEAR = $year");
-        $sqle->execute();
-        $resulte = $sqle->fetchAll();
-        //print_r($resulte);
-    } else if (($_POST['id']) == 'bck') {
-        $sqle = $conne->prepare("SELECT * FROM vBatch_Web WHERE D_ID = 5 AND START_DAY = $day AND START_MONTH = $month AND START_YEAR = $year");
-        $sqle->execute();
-        $resulte = $sqle->fetchAll();
-        //print_r($resulte);
-    } else if (($_POST['id']) == 'pkn') {
-        $sqle = $conne->prepare("SELECT * FROM vBatch_Web WHERE D_ID = 3 AND START_DAY = $day AND START_MONTH = $month AND START_YEAR = $year");
-        $sqle->execute();
-        $resulte = $sqle->fetchAll();
-        //print_r($resulte);
-    } else if (($_POST['id']) == 'ptg') {
-        $sqle = $conne->prepare("SELECT * FROM vBatch_Web WHERE D_ID = 2 AND START_DAY = $day AND START_MONTH = $month AND START_YEAR = $year");
-        $sqle->execute();
-        $resulte = $sqle->fetchAll();
-        //print_r($resulte);
-    } else if (($_POST['id']) == 'mk') {
-        $sqle = $conne->prepare("SELECT * FROM vBatch_Web WHERE D_ID = 1 AND START_DAY = $day AND START_MONTH = $month AND START_YEAR = $year");
-        $sqle->execute();
-        $resulte = $sqle->fetchAll();
-       // print_r($resulte);
-    }
+    
+    $sqle = $conn->prepare("SELECT * FROM vTank_DayReport WHERE DAY = $day AND MONTH = $month AND YEAR = $year");
+    $sqle->execute();
+    $resulte = $sqle->fetchAll();
     
     if(($month) == '01'){
         $month = 'มกราคม';

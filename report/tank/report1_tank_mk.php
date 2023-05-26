@@ -1,34 +1,12 @@
 <?php
-    require_once '../../config/exd_db.php';
-    $month = $_POST['month'];
-    $year = $_POST['year'];
-    $db = $_POST['id'];
-    if (($_POST['id']) == 'susco') {
-        $sqle = $conne->prepare("SELECT * FROM vBatch_Web WHERE D_ID = 4 AND START_MONTH = $month AND START_YEAR = $year");
-        $sqle->execute();
-        $resulte = $sqle->fetchAll();
-        //print_r($resulte);
-    } else if (($_POST['id']) == 'bck') {
-        $sqle = $conne->prepare("SELECT * FROM vBatch_Web WHERE D_ID = 5 AND START_MONTH = $month AND START_YEAR = $year");
-        $sqle->execute();
-        $resulte = $sqle->fetchAll();
-        //print_r($resulte);
-    } else if (($_POST['id']) == 'pkn') {
-        $sqle = $conne->prepare("SELECT * FROM vBatch_Web WHERE D_ID = 3 AND START_MONTH = $month AND START_YEAR = $year");
-        $sqle->execute();
-        $resulte = $sqle->fetchAll();
-        //print_r($resulte);
-    } else if (($_POST['id']) == 'ptg') {
-        $sqle = $conne->prepare("SELECT * FROM vBatch_Web WHERE D_ID = 2 AND START_MONTH = $month AND START_YEAR = $year");
-        $sqle->execute();
-        $resulte = $sqle->fetchAll();
-        //print_r($resulte);
-    } else if (($_POST['id']) == 'mk') {
-        $sqle = $conne->prepare("SELECT * FROM vBatch_Web WHERE D_ID = 1 AND START_MONTH = $month AND START_YEAR = $year");
-        $sqle->execute();
-        $resulte = $sqle->fetchAll();
-       // print_r($resulte);
-    }
+     require_once '../../config/shell_db.php';
+     $month = $_POST['month'];
+     $year = $_POST['year'];
+     $db = $_POST['id'];
+     
+     $sqle = $conn->prepare("SELECT * FROM vTank_MonthReport_V2 WHERE MONTH = $month AND YEAR = $year");
+     $sqle->execute();
+     $resulte = $sqle->fetchAll();
     
     if(($month) == '01'){
         $month = 'มกราคม';
@@ -153,19 +131,21 @@
                     <thead>
                         <tr align="center">
                             <td rowspan="2" width="5%"><b>เวลา</b></td>
-                            <td colspan="4" ><b>Tank08</b></td>
-                            <td colspan="4" ><b>Tank11</b></td>
+                            <td colspan="5" ><b>Tank08</b></td>
+                            <td colspan="5" ><b>Tank11</b></td>
                         </tr>
                         <tr align="center">
-                            <td width="11%"><b>ปริมาณน้ำมัน<br>(ลิตร)</b></td>
-                            <td width="9%"><b>ระดับน้ำมัน<br>(ลิตร)</b></td>
-                            <td width="8%"><b>อุณหภูมิ<br> ( ํC)</b></td>
-                            <td width="8%"><b>สถานะวาล์ว<br>(เปิด/ปิด)</b> </td>
+                            <td><b>ปริมาณน้ำมัน Max (ลิตร)</b></td>
+                            <td><b>ปริมาณน้ำมัน Min (ลิตร)</b></td>
+                            <td><b>ระดับน้ำมัน Max (มม.)</b></td>
+                            <td><b>ระดับน้ำมัน Min (มม.)</b></td>
+                            <td><b>อุณหภูมิ<br> ( ํF)</b></td>
                             
-                            <td width="11%"><b>ปริมาณน้ำมัน<br>(ลิตร)</b></td>
-                            <td width="9%"><b>ระดับน้ำมัน<br>(ลิตร)</b></td>
-                            <td width="8%"><b>อุณหภูมิ<br> ( ํC)</b></td>
-                            <td width="8%"><b>สถานะวาล์ว<br>(เปิด/ปิด)</b> </td>
+                            <td><b>ปริมาณน้ำมัน Max (ลิตร)</b></td>
+                            <td><b>ปริมาณน้ำมัน Min (ลิตร)</b></td>
+                            <td><b>ระดับน้ำมัน Max (มม.)</b></td>
+                            <td><b>ระดับน้ำมัน Min (มม.)</b></td>
+                            <td><b>อุณหภูมิ<br> ( ํF)</b></td>
                         </tr>
                     </thead>
                     <tbody>
@@ -176,8 +156,8 @@
                         //array_merge($arr,$resulte); 
                         //$resulte = $arr;
 
-                        $resulte = array_slice($resulte,0,24);
-                        $aa = count($resulte) <=24 ? 24-count($resulte): 0;
+                        $resulte = array_slice($resulte,0,30);
+                        $aa = count($resulte) <=30 ? 30-count($resulte): 0;
                         $bb = count($resulte)+1;
                         foreach($resulte as $key => $z){ 
                            // print_r($z);
@@ -185,20 +165,24 @@
                            <?php // $percent = ((($z['TANK_RECIVE_VOL'] - $z['METER_VOLUME']) / $z['TANK_RECIVE_VOL']) * 100) ?>
                            
                         <tr align="center">                          
-                            <td><?php echo $z['Time'] ?> </td>
-                            <td><?php echo $z['TK08_Total'] ?> </td>
-                            <td><?php echo $z['TK08_Level'] ?> </td>
+                            <td><?php echo $z['DATE'] ?> </td>
+                            <td><?php echo $z['TK08_Total_Max'] ?> </td>
+                            <td><?php echo $z['TK08_Total_Min'] ?> </td>
+                            <td><?php echo $z['TK08_Level_Max'] ?> </td>
+                            <td><?php echo $z['TK08_Level_Min'] ?> </td>
                             <td><?php echo $z['TK08_Temp'] ?> </td>
-                            <td><?php echo $z['TK08_Valve_Sts'] ?> </td>
-                            <td><?php echo $z['TK11_Total'] ?> </td>
-                            <td><?php echo $z['TK11_Level'] ?> </td>
+                            <td><?php echo $z['TK11_Total_Max'] ?> </td>
+                            <td><?php echo $z['TK11_Total_Min'] ?> </td>
+                            <td><?php echo $z['TK11_Level_Max'] ?> </td>
+                            <td><?php echo $z['TK11_Level_Min'] ?> </td>
                             <td><?php echo $z['TK11_Temp'] ?> </td>
-                            <td><?php echo $z['TK11_Valve_Sts'] ?> </td>
                         </tr>
                         <?php } ?>                   
                         <?php for($i=0;$i<$aa;$i++){ ?>
                         <tr align="center">                           
-                            <td>&nbsp; </td>
+                            <td>&nbsp;</td>
+                            <td> </td>
+                            <td> </td>
                             <td> </td>
                             <td> </td>
                             <td> </td>

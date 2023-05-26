@@ -304,7 +304,7 @@ $name = $row['firstname'] . " " . $row['lastname'];
     </div>
     <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-5"
-        style="background-color: #FF8C00;">
+        style="background-color: #F4A460;">
         <div class="col-md-6 d-flex align-items-center">
         <img src="../images/unity1.png" style="width:120px;">
             <span class="mb-md-0 text-muterd">
